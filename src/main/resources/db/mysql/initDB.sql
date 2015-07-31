@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS webshop;
-GRANT ALL PRIVILEGES ON petclinic.* TO pc@localhost IDENTIFIED BY 'pc';
+GRANT ALL PRIVILEGES ON webshop.* TO root@localhost IDENTIFIED BY 'root';
 
 USE webshop;
 
