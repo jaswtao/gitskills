@@ -40,9 +40,9 @@
 
     <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
         <property name="formatters">
-            <set>
+            <list>
                 <bean class="org.springframework.samples.petclinic.web.PetTypeFormatter"/>
-            </set>
+            </list>
         </property>
     </bean>
 
