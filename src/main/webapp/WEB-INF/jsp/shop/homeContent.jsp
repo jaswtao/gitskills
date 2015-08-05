@@ -20,7 +20,7 @@
 		</ol>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<spring:url value="/resources/images/shop/aaa.jpg" htmlEscape="true"
+				<spring:url value="/resources/images/shop/ccc.jpg" htmlEscape="true"
 					var="aaa" />
 				<spring:url value="/resources/images/shop/bbb.jpg" htmlEscape="true"
 					var="bbb" />
