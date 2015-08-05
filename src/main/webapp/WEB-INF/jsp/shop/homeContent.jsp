@@ -9,6 +9,9 @@
 .banner {
 	
 }
+.thumbnailPlus{
+	border: 0px;
+}
 </style>
 <div class="jumbotron">
 	<div id="carousel-example-generic" class="carousel slide banner"
@@ -69,7 +72,7 @@
 		<spring:url value="/resources/images/shop/333.jpg" htmlEscape="true"
 			var="pic3" />
 		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
+			<div class="thumbnail thumbnailPlus" style="border: 0px;">
 				<img src="${pic1}" alt="111">
 				<div class="caption">
 					<h3>托尼托尼·乔巴</h3>
@@ -86,13 +89,13 @@
 悬赏：50贝利（司法岛事件）
 师傅：魔女Dr.库蕾哈（朵丽儿医娘）</p>
 					<p>
-						<a href="#" class="btn btn-primary" role="button">详情</a>
+						<a href="#" class="btn btn-default" role="button">详情</a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
+			<div class="thumbnail thumbnailPlus">
 				<img src="${pic2}" alt="111">
 				<div class="caption">
 					<h3>娜美</h3>
@@ -113,13 +116,13 @@
 悬赏：1600万（司法岛事件）
 师傅：小空岛 维萨利亚的气象学家哈勒达斯</p>
 					<p>
-						<a href="#" class="btn btn-primary" role="button">详情</a>
+						<a href="#" class="btn btn-default" role="button">详情</a>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
+			<div class="thumbnail thumbnailPlus">
 				<img src="${pic3}" alt="111">
 				<div class="caption">
 					<h3>蒙奇·D·路飞</h3>
@@ -139,7 +142,7 @@
 悬赏：3千万（可可亚西村事件）→1亿（阿拉巴斯坦事件）→3亿（司法岛事件）→4亿（顶上战争后）
 师傅：冥王西尔巴兹·雷利（冥王雷利花一年半时间教路飞使用霸气，路飞自己又练习了半年。）</p>
 					<p>
-						<a href="#" class="btn btn-primary" role="button">详情</a>
+						<a href="#" class="btn btn-default" role="button">详情</a>
 					</p>
 				</div>
 			</div>
