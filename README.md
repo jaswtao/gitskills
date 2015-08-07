@@ -6,5 +6,5 @@ adddd  merge
 change from https to ssh
 
 mvn dependency:copy-dependencies -DoutputDirectory=lib
-
+ 
 changes ssh config
