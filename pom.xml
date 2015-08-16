@@ -368,7 +368,7 @@
 				<configuration>
 					<server>tomcat-development-server</server>
 					<port>9966</port>
-					<path>/petclinic</path>
+					<path>/webshop</path>
 				</configuration>
 			</plugin>
 			<plugin>

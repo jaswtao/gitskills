@@ -124,10 +124,36 @@
 			</div>
 		</div>
 	</div>
-	<form class="form-inline" enctype="multipart/form-data" action="<spring:url value="/upload" htmlEscape="true" />" method="post">
-		<div class="form-group">
-			<label>文件：</label><input type="file" name="file"><input
-				type="submit" value="提交">
-		</div>
-	</form>
+	<div class="row">
+		<form id="uploadForm" class="form-inline" enctype="multipart/form-data" action="<spring:url value="/upload" htmlEscape="true" />" method="post">
+			<div class="form-group">
+				<label>文件：</label><input id="file" type="file" name="file"><input
+					type="button" id="submitButton" class="btn btn-default" value="提交">
+			</div>
+		</form>
+	</div>
 </div>
+<script>
+	$(function(){
+		$("#submitButton").click(function(){
+			//alert($("form")[0].action);
+			alert($("#uploadForm")[0]);
+			return;
+			const formData = new FormData($("form")[0]);
+			const url = '<spring:url value="/validateImage" htmlEscape="true" />';
+			$.ajax({
+				url : url,
+				data : formData,
+				type : "post",
+				processData: false,
+		        contentType: false,
+				success : function(data) {
+					alert(data);
+				},
+				error : function() {
+					alert("验证出错");
+				}
+			});
+		});
+	});
+</script>
