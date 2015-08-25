@@ -124,29 +124,63 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<form id="uploadForm" class="form-inline" enctype="multipart/form-data" action="<spring:url value="/upload" htmlEscape="true" />" method="post">
+	<%-- <div class="row">
+		<form id="uploadForm" class="form-inline"
+			enctype="multipart/form-data"
+			action="<spring:url value="/upload" htmlEscape="true" />"
+			method="post">
 			<div class="form-group">
 				<label>文件：</label><input id="file" type="file" name="file"><input
 					type="button" id="submitButton" class="btn btn-default" value="提交">
 			</div>
 		</form>
+	</div> --%>
+	<div class="row">
+		<div class="col-md-4">
+			<!-- <ul>
+				<li class="list-group-item"><a href="#">aaaaaaaaaaaaaaaaaaabbbbbbbbb</a></li>
+				<li class="list-group-item">aaaaaaaaaaaaaaaaaaa</li>
+				<li class="list-group-item">aaaaaaaaaaaaaaaaaaa</li>
+			</ul> -->
+			<table class="table">
+				<tr>
+					<td>aaaaaaaaaaaaaaaaaaaaaaaa</td>
+				</tr>
+				<tr>
+					<td>aaaaaaaaaaaaaaaaaaaaaaaa</td>
+				</tr>
+				<tr>
+					<td>aaaaaaaaaaaaaaaaaaaaaaaa</td>
+				</tr>
+				<tr>
+					<td>aaaaaaaaaaaaaaaaaaaaaaaa</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-8">
+			<div class="text-wrap">
+			contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+			fffffffffffffffff
+			</div>
+		</div>
 	</div>
 </div>
 <script>
-	$(function(){
-		$("#submitButton").click(function(){
+	$(function() {
+		$("#submitButton").click(function() {
 			//alert($("form")[0].action);
 			alert($("#uploadForm")[0]);
 			return;
-			const formData = new FormData($("form")[0]);
-			const url = '<spring:url value="/validateImage" htmlEscape="true" />';
+			const
+			formData = new FormData($("form")[0]);
+			const
+			url = '<spring:url value="/validateImage" htmlEscape="true" />';
 			$.ajax({
 				url : url,
 				data : formData,
 				type : "post",
-				processData: false,
-		        contentType: false,
+				processData : false,
+				contentType : false,
 				success : function(data) {
 					alert(data);
 				},

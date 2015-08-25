@@ -1,3 +1,7 @@
-.container{
+.container {
 	padding-top: 10px;
+}
+
+.text-wrap {
+	word-wrap: break-word;
 }
