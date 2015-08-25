@@ -26,11 +26,11 @@
 			<div class="item active">
 				<spring:url value="/resources/images/shop/ccc.jpg" htmlEscape="true"
 					var="aaa" />
-				<spring:url value="/resources/images/shop/bbb.jpg" htmlEscape="true"
-					var="bbb" />
 				<img src="${aaa}" alt="First slide">
 			</div>
 			<div class="item">
+				<spring:url value="/resources/images/shop/bbb.jpg" htmlEscape="true"
+					var="bbb" />
 				<img src="${bbb}" alt="Second slide">
 			</div>
 		</div>
