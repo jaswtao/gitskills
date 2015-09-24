@@ -15,10 +15,10 @@ public class FileUploadController {
 		System.out.println(file.getContentType());
 		return "shop/home";
 	}
-	
+
 	@RequestMapping(value = "/validateImage", method = RequestMethod.POST)
-	public @ResponseBody boolean validateImage(@RequestParam("file")MultipartFile file) {
+	public @ResponseBody boolean validateImage(@RequestParam("file") MultipartFile file) {
 		return file.getContentType().indexOf("image") != -1;
 	}
-	
+
 }
